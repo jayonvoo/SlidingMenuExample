@@ -86,6 +86,9 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 linkData.DeleteTable();
+
+                defaultAdapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, linkData.GetAllData());
+                listView.setAdapter(defaultAdapter);
             }
         });
 

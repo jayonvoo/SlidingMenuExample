@@ -56,10 +56,11 @@ public class DBAction {
 
     }
 
-    public void DeleteTable(){
+    public void DeleteTable() {
 
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        db.rawQuery("drop table if exists data_table", null);
+        //db.rawQuery("drop table if exists data_table", null);
+        db.delete("data_table", null, null);
     }
 
 
