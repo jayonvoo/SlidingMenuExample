@@ -3,7 +3,6 @@ package com.gnirt69.slidingmenuexample.fragment;/**
  */
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.Context;
 import android.database.Cursor;
@@ -21,12 +20,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.gnirt69.slidingmenuexample.Database.DBAction;
-import com.gnirt69.slidingmenuexample.MainActivity;
 import com.gnirt69.slidingmenuexample.R;
 
 import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class Fragment1 extends Fragment {
 
@@ -35,7 +31,6 @@ public class Fragment1 extends Fragment {
     private EditText editText;
     private String getText;
     private ListView listView;
-    private ArrayList comments;
     private DBAction linkData;
     private Cursor getData;
     private int additem;
@@ -72,8 +67,6 @@ public class Fragment1 extends Fragment {
                 if (numOfTask == 0) {
 
                     getText = editText.getText().toString();
-                    comments = new ArrayList<>();
-                    comments.add(getText);
                     linkData.InsertDBTable(getText);
 
                     numOfTask++;
@@ -81,7 +74,7 @@ public class Fragment1 extends Fragment {
                     new CountDownTimer(10000, 1000) {
                         @Override
                         public void onTick(long l) {
-                            countDown.setText(l / 1000 + "s");
+                            countDown.setText(String.valueOf(l / 1000));
                         }
 
                         @Override
@@ -91,7 +84,6 @@ public class Fragment1 extends Fragment {
                         }
                     }.start();
                 }
-
                 defaultAdapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, linkData.GetAllData());
                 listView.setAdapter(defaultAdapter);
 
@@ -123,26 +115,4 @@ public class Fragment1 extends Fragment {
 
         return rootView;
     }
-
-    //時間計數器
-    /*
-    private void SubInTime() {
-
-        int delay = 1000;
-        int period = 1000;
-        timer = new Timer();
-
-        timer.scheduleAtFixedRate(new TimerTask() {
-            public void run() {
-                if (timeS == 1) {
-                    timer.cancel();
-                } else {
-                    timeS--;
-                    countDown.setText(String.valueOf(timeS));
-
-                }
-            }
-        }, delay, period);
-    }
-    */
 }

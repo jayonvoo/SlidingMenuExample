@@ -31,14 +31,14 @@ public class DBAction {
     }
 
     public List<String> GetAllData() {
-        List<String> pakaging = new ArrayList();
+        ArrayList<String> pakaging = new ArrayList();
         dbHelper = new MyDBHelper(context);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         cursor = db.rawQuery("select * from data_table", null);
 
         if (cursor.getColumnCount() > 0) {
             while (cursor.moveToNext()) {
-                pakaging.add(cursor.getString(cursor.getColumnIndex("cmd")));
+                pakaging.add(0,cursor.getString(cursor.getColumnIndex("cmd"))); //佇列顯示資料
             }
         }
         return pakaging;
