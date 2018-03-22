@@ -1,4 +1,4 @@
-#Thu Mar 22 11:41:22 CST 2018
-base.0=C\:\\Users\\TravelingKP\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+#Thu Mar 22 21:41:15 CST 2018
+base.0=C\:\\Users\\kiyot\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\24
 path.0=classes.dex
 renamed.0=classes.dex

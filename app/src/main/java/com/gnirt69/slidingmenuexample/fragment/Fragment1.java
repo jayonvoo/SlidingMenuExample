@@ -40,9 +40,7 @@ public class Fragment1 extends Fragment {
     private Cursor getData;
     private int additem;
     private ListAdapter defaultAdapter;
-    private Timer timer;
-    private int task = 0;
-    private int timeS = 10;
+    private int numOfTask = 0;
 
     public Fragment1() {
 
@@ -71,31 +69,35 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View view) {
 
-                getText = editText.getText().toString();
-                comments = new ArrayList<>();
-                timer = new Timer();
-                comments.add(getText);
-                linkData.InsertDBTable(getText);
+                if (numOfTask == 0) {
 
-                new CountDownTimer(10000, 1000) {
-                    @Override
-                    public void onTick(long l) {
+                    getText = editText.getText().toString();
+                    comments = new ArrayList<>();
+                    comments.add(getText);
+                    linkData.InsertDBTable(getText);
 
-                        if (l != 1000) {
+                    numOfTask++;
+
+                    new CountDownTimer(10000, 1000) {
+                        @Override
+                        public void onTick(long l) {
                             countDown.setText(l / 1000 + "s");
                         }
-                    }
 
-                    @Override
-                    public void onFinish() {
-                    }
-                }.start();
+                        @Override
+                        public void onFinish() {
+                            numOfTask--;
+                            countDown.setText("");
+                        }
+                    }.start();
+                }
 
                 defaultAdapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, linkData.GetAllData());
                 listView.setAdapter(defaultAdapter);
 
             }
         });
+
 
         delbutton.setOnClickListener(new View.OnClickListener() {
             @Override
