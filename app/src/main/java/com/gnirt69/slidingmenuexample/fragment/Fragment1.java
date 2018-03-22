@@ -52,7 +52,6 @@ public class Fragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment1, container, false);
 
-
         button = (Button) rootView.findViewById(R.id.button1);
         delbutton = (Button) rootView.findViewById(R.id.button2);
         editText = (EditText) rootView.findViewById(R.id.editText1);
@@ -64,6 +63,8 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View view) {
 
+
+                //偵測時間是否結束，以任務執行數回報
                 if (numOfTask == 0) {
 
                     getText = editText.getText().toString();
@@ -73,23 +74,24 @@ public class Fragment1 extends Fragment {
 
                     new CountDownTimer(10000, 1000) {
                         @Override
-                        public void onTick(long l) {
+                        public void onTick(long l) {  //首要任務
                             countDown.setText(String.valueOf(l / 1000));
                         }
 
                         @Override
-                        public void onFinish() {
+                        public void onFinish() {    //回報
                             numOfTask--;
                             countDown.setText("");
                         }
                     }.start();
                 }
+
+                //將資料更新或顯示到View上
                 defaultAdapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, linkData.GetAllData());
                 listView.setAdapter(defaultAdapter);
 
             }
         });
-
 
         delbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,7 +111,6 @@ public class Fragment1 extends Fragment {
             }
         });
 
-        //將資料顯示到listview上
         defaultAdapter = new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_list_item_1, linkData.GetAllData());
         listView.setAdapter(defaultAdapter);
 
