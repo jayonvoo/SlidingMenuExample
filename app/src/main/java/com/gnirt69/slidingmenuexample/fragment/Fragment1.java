@@ -8,6 +8,7 @@ import android.app.Fragment;
 import android.content.Context;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +41,8 @@ public class Fragment1 extends Fragment {
     private int additem;
     private ListAdapter defaultAdapter;
     private Timer timer;
-    int timeS = 30;
+    private int task = 0;
+    private int timeS = 10;
 
     public Fragment1() {
 
@@ -68,16 +70,29 @@ public class Fragment1 extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 getText = editText.getText().toString();
                 comments = new ArrayList<>();
                 timer = new Timer();
                 comments.add(getText);
                 linkData.InsertDBTable(getText);
 
+                new CountDownTimer(10000, 1000) {
+                    @Override
+                    public void onTick(long l) {
+
+                        if (l != 1000) {
+                            countDown.setText(l / 1000 + "s");
+                        }
+                    }
+
+                    @Override
+                    public void onFinish() {
+                    }
+                }.start();
+
                 defaultAdapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, linkData.GetAllData());
                 listView.setAdapter(defaultAdapter);
-
-                SubInTime();
 
             }
         });
@@ -107,9 +122,9 @@ public class Fragment1 extends Fragment {
         return rootView;
     }
 
-
     //時間計數器
-    private int SubInTime() {
+    /*
+    private void SubInTime() {
 
         int delay = 1000;
         int period = 1000;
@@ -126,6 +141,6 @@ public class Fragment1 extends Fragment {
                 }
             }
         }, delay, period);
-        return timeS;
     }
+    */
 }
