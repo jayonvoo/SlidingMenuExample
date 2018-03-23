@@ -1,28 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kiyot\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-land_values-land.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\kiyot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\317ff49eb42d1d33db1a55eba6d201b4\\res\\values-land\\values.xml",
-                    "from": {
-                        "startLines": "3,4,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "56,118,191,261,331,395,466",
-                        "endColumns": "61,71,69,69,63,70,67",
-                        "endOffsets": "113,185,256,326,390,461,529"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,117,189,259,329,393,464",
-                        "endColumns": "61,71,69,69,63,70,67",
-                        "endOffsets": "112,184,254,324,388,459,527"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\kiyot\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ko_values-ko.arsc.flat",
             "map": [
                 {
@@ -40,6 +18,28 @@
                         "startOffsets": "55,150,258,381,475,577,659,757,863,961,1056,1151,1251,1347,1446",
                         "endColumns": "94,107,122,93,101,81,97,105,97,94,94,99,95,98,114",
                         "endOffsets": "145,253,376,470,572,654,752,858,956,1051,1146,1246,1342,1441,1556"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\kiyot\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-land_values-land.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\kiyot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\317ff49eb42d1d33db1a55eba6d201b4\\res\\values-land\\values.xml",
+                    "from": {
+                        "startLines": "3,4,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "56,118,191,261,331,395,466",
+                        "endColumns": "61,71,69,69,63,70,67",
+                        "endOffsets": "113,185,256,326,390,461,529"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,117,189,259,329,393,464",
+                        "endColumns": "61,71,69,69,63,70,67",
+                        "endOffsets": "112,184,254,324,388,459,527"
                     }
                 }
             ]
@@ -177,28 +177,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\TravelingKP\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w480dp-v13_values-w480dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\TravelingKP\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\e402d70bce93f0bfb370a4daa4354ce2\\res\\values-w480dp\\values.xml",
-                    "from": {
-                        "startLines": "3,4",
-                        "startColumns": "4,4",
-                        "startOffsets": "56,118",
-                        "endColumns": "61,71",
-                        "endOffsets": "113,185"
-                    },
-                    "to": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,117",
-                        "endColumns": "61,71",
-                        "endOffsets": "112,184"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\TravelingKP\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-ky-rKG_values-ky-rKG.arsc.flat",
             "map": [
                 {
@@ -216,6 +194,28 @@
                         "startOffsets": "55,159,267,390,485,604,688,795,912,1022,1129,1227,1333,1440,1541",
                         "endColumns": "103,107,122,94,118,83,106,116,109,106,97,105,106,100,123",
                         "endOffsets": "154,262,385,480,599,683,790,907,1017,1124,1222,1328,1435,1536,1660"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\TravelingKP\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-w480dp-v13_values-w480dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\TravelingKP\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\e402d70bce93f0bfb370a4daa4354ce2\\res\\values-w480dp\\values.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,118",
+                        "endColumns": "61,71",
+                        "endOffsets": "113,185"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,117",
+                        "endColumns": "61,71",
+                        "endOffsets": "112,184"
                     }
                 }
             ]
