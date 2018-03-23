@@ -63,6 +63,8 @@ public class Fragment1 extends Fragment {
         listView = (SwipeMenuListView) rootView.findViewById(R.id.listview01);
         countDown = (TextView) rootView.findViewById(R.id.countdown);
 
+        slideListener();
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -126,6 +128,7 @@ public class Fragment1 extends Fragment {
         return rootView;
     }
 
+    //添加滑動效果
     private void initializeList() {
         creator = new SwipeMenuCreator() {
 
@@ -147,5 +150,28 @@ public class Fragment1 extends Fragment {
             }
         };
         listView.setMenuCreator(creator);
+    }
+
+    private void slideListener() {
+        listView.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(int position, SwipeMenu menu, int index) {
+
+                switch (index) {
+
+                    case 0:
+
+                        out.println(listView.getAdapter().getItem(position));
+                        break;
+
+                    case 1:
+
+                        out.println("clicked " + index);
+                        break;
+                }
+
+                return false;
+            }
+        });
     }
 }
