@@ -16,6 +16,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CalendarView;
+import android.widget.CursorAdapter;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.TextView;
@@ -68,6 +70,18 @@ public class Fragment1 extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                CursorAdapter adapter = new CursorAdapter(view.getContext(), getData, false) {
+                    @Override
+                    public View newView(Context context, Cursor cursor, ViewGroup viewGroup) {
+                        return null;
+                    }
+
+                    @Override
+                    public void bindView(View view, Context context, Cursor cursor) {
+
+                    }
+                };
 
 
                 //偵測時間是否結束，以任務執行數回報
@@ -161,7 +175,7 @@ public class Fragment1 extends Fragment {
 
                     case 0:
 
-                        out.println(listView.getAdapter().getItem(position));
+                        out.println(listView.getAdapter().getItemId(position));
                         break;
 
                     case 1:
