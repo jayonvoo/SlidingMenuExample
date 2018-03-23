@@ -70,8 +70,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText1" />
 
-
-    <ListView
+    <com.baoyz.swipemenulistview.SwipeMenuListView
         android:id="@+id/listview01"
         android:layout_width="312dp"
         android:layout_height="361dp"
@@ -82,7 +81,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
 
-
     <TextView
         android:id="@+id/countdown"
         android:layout_width="83dp"
@@ -92,10 +90,5 @@
         android:textColor="@android:color/holo_red_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText1" />
-
-    <com.baoyz.swipemenulistview.SwipeMenuListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
 </android.support.constraint.ConstraintLayout>
