@@ -45,6 +45,7 @@ public class Fragment1 extends Fragment {
     private ListAdapter defaultAdapter;
     private int numOfTask = 0;
     private SwipeMenuCreator creator;
+    private boolean editable = false;
 
     public Fragment1() {
 
@@ -68,50 +69,54 @@ public class Fragment1 extends Fragment {
 
         slideListener();
 
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                CursorAdapter adapter = new CursorAdapter(view.getContext(), getData, false) {
-                    @Override
-                    public View newView(Context context, Cursor cursor, ViewGroup viewGroup) {
-                        return null;
-                    }
-
-                    @Override
-                    public void bindView(View view, Context context, Cursor cursor) {
-
-                    }
-                };
-
-
-                //偵測時間是否結束，以任務執行數回報
-                if (numOfTask == 0) {
-
-                    getText = editText.getText().toString();
-                    linkData.InsertDBTable(getText);
-
-                    numOfTask++;
-
-                    new CountDownTimer(10000, 1000) {
+                if (!editable) {
+                    CursorAdapter adapter = new CursorAdapter(view.getContext(), getData, false) {
                         @Override
-                        public void onTick(long l) {  //首要任務
-                            countDown.setText(String.valueOf(l / 1000));
+                        public View newView(Context context, Cursor cursor, ViewGroup viewGroup) {
+                            return null;
                         }
 
                         @Override
-                        public void onFinish() {    //回報
-                            numOfTask--;
-                            countDown.setText("");
+                        public void bindView(View view, Context context, Cursor cursor) {
+
                         }
-                    }.start();
+                    };
+
+
+                    //偵測時間是否結束，以任務執行數回報
+                    if (numOfTask == 0) {
+
+                        getText = editText.getText().toString();
+                        linkData.InsertDBTable(getText);
+
+                        numOfTask++;
+
+                        new CountDownTimer(10000, 1000) {
+                            @Override
+                            public void onTick(long l) {  //首要任務
+                                countDown.setText(String.valueOf(l / 1000));
+                            }
+
+                            @Override
+                            public void onFinish() {    //回報
+                                numOfTask--;
+                                countDown.setText("");
+                            }
+                        }.start();
+                    }
+
+                    //將資料更新或顯示到View上
+                    defaultAdapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, linkData.GetAllData());
+                    initializeList();
+                    listView.setAdapter(defaultAdapter);
+                } else {
+
                 }
-
-                //將資料更新或顯示到View上
-                defaultAdapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, linkData.GetAllData());
-                initializeList();
-                listView.setAdapter(defaultAdapter);
-
             }
 
         });
@@ -189,6 +194,7 @@ public class Fragment1 extends Fragment {
                     case 0:
 
                         out.println("clicked " + index);
+                        editText.requestFocus();
                         break;
 
                     case 1:

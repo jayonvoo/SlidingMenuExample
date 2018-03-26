@@ -60,5 +60,7 @@ public class DBAction {
         db.delete("data_table", null, null);
     }
 
+    public void EditTable(String str) {
 
+    }
 }
