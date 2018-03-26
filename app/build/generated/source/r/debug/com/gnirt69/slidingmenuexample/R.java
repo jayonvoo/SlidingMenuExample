@@ -1862,10 +1862,11 @@ public final class R {
     public static final int ic_action_settings=0x7f060038;
     public static final int ic_action_share=0x7f060039;
     public static final int ic_delete=0x7f06003a;
-    public static final int ic_launcher=0x7f06003b;
-    public static final int list_item_notselected=0x7f06003c;
-    public static final int list_item_selected=0x7f06003d;
-    public static final int list_item_style=0x7f06003e;
+    public static final int ic_edit_black_24dp=0x7f06003b;
+    public static final int ic_launcher=0x7f06003c;
+    public static final int list_item_notselected=0x7f06003d;
+    public static final int list_item_selected=0x7f06003e;
+    public static final int list_item_style=0x7f06003f;
   }
   public static final class id {
     public static final int action_bar=0x7f070000;
