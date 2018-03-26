@@ -150,6 +150,15 @@ public class Fragment1 extends Fragment {
             @Override
             public void create(SwipeMenu menu) {
 
+                SwipeMenuItem editText = new SwipeMenuItem(getActivity());
+
+                editText.setBackground(new ColorDrawable(Color.rgb(20, 174, 41)));
+
+                editText.setWidth(50);
+
+                editText.setIcon(R.drawable.ic_edit_black_24dp);
+
+
                 // create "delete" item
                 SwipeMenuItem deleteItem = new SwipeMenuItem(
                         getActivity());
@@ -157,11 +166,14 @@ public class Fragment1 extends Fragment {
                 deleteItem.setBackground(new ColorDrawable(Color.rgb(0xF9,
                         0x3F, 0x25)));
                 // set item width
-                deleteItem.setWidth(90);
+                deleteItem.setWidth(50);
                 // set a icon
                 deleteItem.setIcon(R.drawable.ic_delete);
                 // add to menu
+
+                menu.addMenuItem(editText);
                 menu.addMenuItem(deleteItem);
+
             }
         };
         listView.setMenuCreator(creator);
@@ -176,12 +188,12 @@ public class Fragment1 extends Fragment {
 
                     case 0:
 
-                        linkData.DeleteData((String) listView.getAdapter().getItem(position));
+                        out.println("clicked " + index);
                         break;
 
                     case 1:
 
-                        out.println("clicked " + index);
+                        linkData.DeleteData((String) listView.getAdapter().getItem(position));
                         break;
                 }
 

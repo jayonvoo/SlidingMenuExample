@@ -387,10 +387,11 @@ int drawable ic_action_important 0x7f060037
 int drawable ic_action_settings 0x7f060038
 int drawable ic_action_share 0x7f060039
 int drawable ic_delete 0x7f06003a
-int drawable ic_launcher 0x7f06003b
-int drawable list_item_notselected 0x7f06003c
-int drawable list_item_selected 0x7f06003d
-int drawable list_item_style 0x7f06003e
+int drawable ic_edit_black_24dp 0x7f06003b
+int drawable ic_launcher 0x7f06003c
+int drawable list_item_notselected 0x7f06003d
+int drawable list_item_selected 0x7f06003e
+int drawable list_item_style 0x7f06003f
 int id action_bar 0x7f070000
 int id action_bar_activity_content 0x7f070001
 int id action_bar_container 0x7f070002
