@@ -38,21 +38,18 @@ public class DBAction {
 
         if (cursor.getColumnCount() > 0) {
             while (cursor.moveToNext()) {
-                pakaging.add(0,cursor.getString(cursor.getColumnIndex("cmd"))); //佇列顯示資料
+                pakaging.add(0, cursor.getString(cursor.getColumnIndex("cmd"))); //佇列顯示資料
             }
         }
         return pakaging;
     }
 
-    public void DeleteData(List<String> data, int position) {
+    public void DeleteData(String string) {
 
         int id;
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        cursor = db.rawQuery("select * from data_table", null);
-
-        data.remove(position);
-        cursor.moveToPosition(position);
-        id = cursor.getInt(cursor.getColumnIndex("_id"));
+        //db.rawQuery("delete from data_table where cmd = '" + string + "'");
+        db.delete("data_table", "cmd=?", new String[]{string});
 
     }
 

@@ -27,6 +27,7 @@ import com.baoyz.swipemenulistview.SwipeMenuCreator;
 import com.baoyz.swipemenulistview.SwipeMenuItem;
 import com.baoyz.swipemenulistview.SwipeMenuListView;
 import com.gnirt69.slidingmenuexample.Database.DBAction;
+import com.gnirt69.slidingmenuexample.MainActivity;
 import com.gnirt69.slidingmenuexample.R;
 
 import static java.lang.System.out;
@@ -175,7 +176,7 @@ public class Fragment1 extends Fragment {
 
                     case 0:
 
-                        out.println(listView.getAdapter().getItemId(position));
+                        linkData.DeleteData((String) listView.getAdapter().getItem(position));
                         break;
 
                     case 1:
@@ -183,6 +184,10 @@ public class Fragment1 extends Fragment {
                         out.println("clicked " + index);
                         break;
                 }
+
+                defaultAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, linkData.GetAllData());
+                initializeList();
+                listView.setAdapter(defaultAdapter);
 
                 return false;
             }
