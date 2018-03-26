@@ -194,6 +194,8 @@ public class Fragment1 extends Fragment {
                     case 0:
 
                         out.println("clicked " + index);
+
+                        //用於指定回原本的edittext， 依if/else判斷是否處於修改狀態再傳送資料到DB
                         editText.requestFocus();
                         break;
 

@@ -15,19 +15,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8594f31-9ea4-49fe-ac79-23dbf3a22242" name="Default" comment="update 2113">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
+    <list default="true" id="a8594f31-9ea4-49fe-ac79-23dbf3a22242" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/Database/DBAction.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/Database/DBAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java" />
     </list>
     <ignored path="SlidingMenuExample.iws" />
@@ -80,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Fragment1.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Fragment1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="333">
+              <caret line="202" column="0" lean-forward="true" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
               <folding>
                 <element signature="e#2350#4092#0" expanded="true" />
                 <element signature="e#4091#4092#0" expanded="true" />
@@ -94,8 +83,8 @@
                 <element signature="e#4778#4779#0" expanded="true" />
                 <element signature="e#5079#6048#0" expanded="true" />
                 <element signature="e#6047#6048#0" expanded="true" />
-                <element signature="e#6178#6981#0" expanded="true" />
-                <element signature="e#6980#6981#0" expanded="true" />
+                <element signature="e#6178#7053#0" expanded="true" />
+                <element signature="e#7052#7053#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/Database/DBAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+            <state relative-caret-position="333">
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1918,8 +1907,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/Database/DBAction.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java" />
       </list>
     </option>
   </component>
@@ -2517,7 +2506,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522080151801" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522080314081" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2565,7 +2554,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522080151801" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522080314081" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2727,7 +2716,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522080151802" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522080314082" />
       </method>
     </configuration>
     <list size="1">
@@ -2965,7 +2954,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522070031948</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update 0002">
+      <created>1522080176553</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1522080176553</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3068,7 +3064,8 @@
     <MESSAGE value="update 2105" />
     <MESSAGE value="update 2112" />
     <MESSAGE value="update 2113" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 2113" />
+    <MESSAGE value="update 0002" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 0002" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3327,25 +3324,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding>
-            <element signature="e#2350#4092#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4134#4513#0" expanded="true" />
-            <element signature="e#4512#4513#0" expanded="true" />
-            <element signature="e#4561#4779#0" expanded="true" />
-            <element signature="e#4778#4779#0" expanded="true" />
-            <element signature="e#5079#6048#0" expanded="true" />
-            <element signature="e#6047#6048#0" expanded="true" />
-            <element signature="e#6178#6981#0" expanded="true" />
-            <element signature="e#6980#6981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/Database/MyDBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -3356,9 +3334,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/Database/DBAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+        <state relative-caret-position="333">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="202" column="0" lean-forward="true" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding>
+            <element signature="e#2350#4092#0" expanded="true" />
+            <element signature="e#4091#4092#0" expanded="true" />
+            <element signature="e#4134#4513#0" expanded="true" />
+            <element signature="e#4512#4513#0" expanded="true" />
+            <element signature="e#4561#4779#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+            <element signature="e#5079#6048#0" expanded="true" />
+            <element signature="e#6047#6048#0" expanded="true" />
+            <element signature="e#6178#7053#0" expanded="true" />
+            <element signature="e#7052#7053#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
