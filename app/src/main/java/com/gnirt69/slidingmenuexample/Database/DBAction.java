@@ -31,7 +31,7 @@ public class DBAction {
 
     }
 
-    public List<String> GetAllData() {
+    public ArrayList<String> GetAllData() {
         ArrayList<String> pakaging = new ArrayList();
         dbHelper = new MyDBHelper(context);
         SQLiteDatabase db = dbHelper.getReadableDatabase();

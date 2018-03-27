@@ -10,16 +10,14 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.CalendarView;
-import android.widget.CursorAdapter;
 import android.widget.EditText;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.baoyz.swipemenulistview.SwipeMenu;
@@ -27,8 +25,9 @@ import com.baoyz.swipemenulistview.SwipeMenuCreator;
 import com.baoyz.swipemenulistview.SwipeMenuItem;
 import com.baoyz.swipemenulistview.SwipeMenuListView;
 import com.gnirt69.slidingmenuexample.Database.DBAction;
-import com.gnirt69.slidingmenuexample.MainActivity;
 import com.gnirt69.slidingmenuexample.R;
+
+import java.util.ArrayList;
 
 import static java.lang.System.out;
 
@@ -36,14 +35,14 @@ import static java.lang.System.out;
 public class Fragment1 extends Fragment {
 
     Button button, delbutton;
-    private TextView textView, countDown;
+    String[] items;
+    private TextView countDown;
     private EditText editText;
     private String getText, transferData;
     private SwipeMenuListView listView;
+    private ArrayList<String> list;
     private DBAction linkData;
-    private Cursor getData;
-    private int additem;
-    private ListAdapter defaultAdapter;
+    private ArrayAdapter<String> defaultAdapter;
     private int numOfTask = 0;
     private SwipeMenuCreator creator;
     private boolean editable = false;
@@ -67,10 +66,38 @@ public class Fragment1 extends Fragment {
 
         slideListener();
 
+        //查詢功能初始化
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+
+            //取得資料庫資料, 用於比對之後的資料篩選功能
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+                items = new String[linkData.GetAllData().size()];
+
+                for (int j = 0; j < linkData.GetAllData().size(); j++) {
+                    items[j] = linkData.GetAllData().get(j);
+                }
+
+                searchItem(charSequence.toString());
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                //判斷是否可修改狀態
                 if (editable) {
 
                     getText = editText.getText().toString();
@@ -78,7 +105,9 @@ public class Fragment1 extends Fragment {
                     linkData.UpdateTable(transferData, getText);
 
                     editable = false;
-                } else if (numOfTask == 0) {
+
+                } else if (numOfTask == 0) {  //偵測時間是否結束，以任務執行數回報
+
 
                     getText = editText.getText().toString();
                     linkData.InsertDBTable(getText);
@@ -108,7 +137,7 @@ public class Fragment1 extends Fragment {
 
         });
 
-
+        //刪除資料表
         delbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -120,19 +149,39 @@ public class Fragment1 extends Fragment {
             }
         });
 
-        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-                return true;
-            }
-        });
-
         defaultAdapter = new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_list_item_1, linkData.GetAllData());
         initializeList();
         listView.setAdapter(defaultAdapter);
 
         return rootView;
+    }
+
+    private void searchItem(String s) {
+        list = linkData.GetAllData();
+
+        //當留言為空時,跳過此判斷且重新讀取資料庫
+        if (!s.equals("")) {
+
+            //依序查詢每次輸入的關鍵字，並把相對的字串存到list裡面
+            for (String item : items) {
+                if (!item.contains(s)) {
+                    list.remove(item);
+
+                    for (Object obj : list) {
+                        out.println(obj);
+                    }
+
+                    //只顯示list裡面的資料
+                    defaultAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, list);
+                }
+            }
+        } else {
+
+            //讀取資料庫
+            defaultAdapter = new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_list_item_1, linkData.GetAllData());
+        }
+
+        listView.setAdapter(defaultAdapter);
     }
 
     //添加滑動效果
@@ -171,6 +220,7 @@ public class Fragment1 extends Fragment {
         listView.setMenuCreator(creator);
     }
 
+    //ListMenu滑動的初始化功能
     private void slideListener() {
         listView.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
             @Override
@@ -182,6 +232,8 @@ public class Fragment1 extends Fragment {
 
                         editable = true;
                         transferData = (String) listView.getAdapter().getItem(position);
+
+                        //調到指定的位置(edit_text)
                         editText.requestFocus();
                         break;
 
