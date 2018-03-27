@@ -184,6 +184,7 @@ public class Fragment1 extends Fragment {
         listView.setAdapter(defaultAdapter);
     }
 
+
     //添加滑動效果
     private void initializeList() {
         creator = new SwipeMenuCreator() {
