@@ -16,18 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8594f31-9ea4-49fe-ac79-23dbf3a22242" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnirt69/slidingmenuexample/Database/DBAction.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnirt69/slidingmenuexample/Database/DBAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/Database/DBAction.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/Database/DBAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java" />
     </list>
     <ignored path="SlidingMenuExample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,8 +71,8 @@
       <file leaf-file-name="Fragment1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1748">
-              <caret line="86" column="36" lean-forward="false" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+            <state relative-caret-position="722">
+              <caret line="192" column="0" lean-forward="true" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3022#4349#0" expanded="true" />
@@ -92,6 +81,8 @@
                 <element signature="e#4348#4349#0" expanded="true" />
                 <element signature="e#4406#4785#0" expanded="true" />
                 <element signature="e#4784#4785#0" expanded="true" />
+                <element signature="e#5918#6887#0" expanded="true" />
+                <element signature="e#6886#6887#0" expanded="true" />
                 <element signature="e#7040#7962#0" expanded="true" />
                 <element signature="e#7961#7962#0" expanded="true" />
               </folding>
@@ -2819,7 +2810,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522132338638" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522132485751" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2866,7 +2857,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522132338638" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522132485751" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3027,7 +3018,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522132338639" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522132485752" />
       </method>
     </configuration>
     <list size="1">
@@ -3293,7 +3284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522118435703</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update 1432">
+      <created>1522132354740</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1522132354740</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3399,7 +3397,8 @@
     <MESSAGE value="update 1427" />
     <MESSAGE value="update 1441" />
     <MESSAGE value="update 1040" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 1040" />
+    <MESSAGE value="update 1432" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1432" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3730,8 +3729,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnirt69/slidingmenuexample/fragment/Fragment1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1748">
-          <caret line="86" column="36" lean-forward="false" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+        <state relative-caret-position="722">
+          <caret line="192" column="0" lean-forward="true" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3022#4349#0" expanded="true" />
@@ -3740,6 +3739,8 @@
             <element signature="e#4348#4349#0" expanded="true" />
             <element signature="e#4406#4785#0" expanded="true" />
             <element signature="e#4784#4785#0" expanded="true" />
+            <element signature="e#5918#6887#0" expanded="true" />
+            <element signature="e#6886#6887#0" expanded="true" />
             <element signature="e#7040#7962#0" expanded="true" />
             <element signature="e#7961#7962#0" expanded="true" />
           </folding>
