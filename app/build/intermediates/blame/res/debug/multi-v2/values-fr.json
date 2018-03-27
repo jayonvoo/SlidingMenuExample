@@ -1,32 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\TravelingKP\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\TravelingKP\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\e402d70bce93f0bfb370a4daa4354ce2\\res\\values-fr\\values.xml",
-                    "from": {
-                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "56,167,275,398,513,624,706,812,942,1052,1164,1267,1378,1485,1592",
-                        "endColumns": "110,107,122,114,110,81,105,129,109,111,102,110,106,106,121",
-                        "endOffsets": "162,270,393,508,619,701,807,937,1047,1159,1262,1373,1480,1587,1709"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,166,274,397,512,623,705,811,941,1051,1163,1266,1377,1484,1591",
-                        "endColumns": "110,107,122,114,110,81,105,129,109,111,102,110,106,106,121",
-                        "endOffsets": "161,269,392,507,618,700,806,936,1046,1158,1261,1372,1479,1586,1708"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\kiyot\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kiyot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\317ff49eb42d1d33db1a55eba6d201b4\\res\\values-fr\\values.xml",
+                    "source": "C:\\Users\\kiyot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\746e39f1bc811e1f4cdb208c33185f20\\res\\values-fr\\values.xml",
                     "from": {
                         "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -4,29 +4,7 @@
             "outputFile": "C:\\Users\\kiyot\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kiyot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\317ff49eb42d1d33db1a55eba6d201b4\\res\\values-land\\values.xml",
-                    "from": {
-                        "startLines": "3,4,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "56,118,191,261,331,395,466",
-                        "endColumns": "61,71,69,69,63,70,67",
-                        "endOffsets": "113,185,256,326,390,461,529"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,117,189,259,329,393,464",
-                        "endColumns": "61,71,69,69,63,70,67",
-                        "endOffsets": "112,184,254,324,388,459,527"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\TravelingKP\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\TravelingKP\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\e402d70bce93f0bfb370a4daa4354ce2\\res\\values-land\\values.xml",
+                    "source": "C:\\Users\\kiyot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\746e39f1bc811e1f4cdb208c33185f20\\res\\values-land\\values.xml",
                     "from": {
                         "startLines": "3,4,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4",

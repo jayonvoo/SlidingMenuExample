@@ -4,29 +4,7 @@
             "outputFile": "C:\\Users\\kiyot\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kiyot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\317ff49eb42d1d33db1a55eba6d201b4\\res\\values-zh-rTW\\values.xml",
-                    "from": {
-                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "56,151,258,381,474,574,656,753,861,957,1053,1148,1245,1340,1440",
-                        "endColumns": "94,106,122,92,99,81,96,107,95,95,94,96,94,99,112",
-                        "endOffsets": "146,253,376,469,569,651,748,856,952,1048,1143,1240,1335,1435,1548"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,150,257,380,473,573,655,752,860,956,1052,1147,1244,1339,1439",
-                        "endColumns": "94,106,122,92,99,81,96,107,95,95,94,96,94,99,112",
-                        "endOffsets": "145,252,375,468,568,650,747,855,951,1047,1142,1239,1334,1434,1547"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\TravelingKP\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\TravelingKP\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\e402d70bce93f0bfb370a4daa4354ce2\\res\\values-zh-rTW\\values.xml",
+                    "source": "C:\\Users\\kiyot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\746e39f1bc811e1f4cdb208c33185f20\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
