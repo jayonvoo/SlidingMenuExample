@@ -124,7 +124,6 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-
     //Create method replace fragment
 
     private void replaceFragment(int pos) {

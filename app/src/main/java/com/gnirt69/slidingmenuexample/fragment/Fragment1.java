@@ -32,12 +32,13 @@ import com.gnirt69.slidingmenuexample.R;
 
 import static java.lang.System.out;
 
+@SuppressLint("ValidFragment")
 public class Fragment1 extends Fragment {
 
     Button button, delbutton;
     private TextView textView, countDown;
     private EditText editText;
-    private String getText;
+    private String getText, transferData;
     private SwipeMenuListView listView;
     private DBAction linkData;
     private Cursor getData;
@@ -45,10 +46,8 @@ public class Fragment1 extends Fragment {
     private ListAdapter defaultAdapter;
     private int numOfTask = 0;
     private SwipeMenuCreator creator;
+    private boolean editable = false;
 
-    public Fragment1() {
-
-    }
 
     @SuppressLint("ValidFragment")
     public Fragment1(Context context) {
@@ -72,21 +71,14 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View view) {
 
-                CursorAdapter adapter = new CursorAdapter(view.getContext(), getData, false) {
-                    @Override
-                    public View newView(Context context, Cursor cursor, ViewGroup viewGroup) {
-                        return null;
-                    }
+                if (editable) {
 
-                    @Override
-                    public void bindView(View view, Context context, Cursor cursor) {
+                    getText = editText.getText().toString();
 
-                    }
-                };
+                    linkData.UpdateTable(transferData, getText);
 
-
-                //偵測時間是否結束，以任務執行數回報
-                if (numOfTask == 0) {
+                    editable = false;
+                } else if (numOfTask == 0) {
 
                     getText = editText.getText().toString();
                     linkData.InsertDBTable(getText);
@@ -188,7 +180,9 @@ public class Fragment1 extends Fragment {
 
                     case 0:
 
-                        out.println("clicked " + index);
+                        editable = true;
+                        transferData = (String) listView.getAdapter().getItem(position);
+                        editText.requestFocus();
                         break;
 
                     case 1:

@@ -1,5 +1,6 @@
 package com.gnirt69.slidingmenuexample.Database;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -42,6 +43,19 @@ public class DBAction {
             }
         }
         return pakaging;
+    }
+
+    public void UpdateTable(String string, String getText) {
+
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+
+        ContentValues cv = new ContentValues();
+
+        cv.put("cmd", getText);
+
+        db.update("data_table", cv, "cmd=?", new String[]{string});
+
+        //db.update("data_table", cv, null, null);
     }
 
     public void DeleteData(String string) {
