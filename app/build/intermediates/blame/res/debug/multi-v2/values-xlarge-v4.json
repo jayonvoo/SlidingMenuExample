@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kiyot\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "C:\\Users\\TravelingKP\\AndroidStudioProjects\\SlidingMenuExample\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\kiyot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\746e39f1bc811e1f4cdb208c33185f20\\res\\values-xlarge\\values.xml",
+                    "source": "C:\\Users\\TravelingKP\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\97665f5a58175c8887b9d0a02110cf61\\res\\values-xlarge\\values.xml",
                     "from": {
                         "startLines": "3,5,7,8,9,10,12",
                         "startColumns": "4,4,4,4,4,4,4",
