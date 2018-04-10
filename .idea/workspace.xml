@@ -15,10 +15,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8594f31-9ea4-49fe-ac79-23dbf3a22242" name="Default" comment="update 2357">
+    <list default="true" id="a8594f31-9ea4-49fe-ac79-23dbf3a22242" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment1.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment1.xml" />
     </list>
     <ignored path="SlidingMenuExample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2354,7 +2352,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="VectorAssetImportPath" value="C:\Users\TravelingKP\AndroidStudioProjects" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522170631461" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1522170687743" />
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
   <component name="RecentsManager">
@@ -2938,7 +2936,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522166256582</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update 0111">
+      <created>1522170681855</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1522170681855</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -2971,7 +2976,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35755813" sideWeight="0.48021308" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42732558" sideWeight="0.46803653" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42732558" sideWeight="0.46803653" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2580645" sideWeight="0.48188406" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24130435" sideWeight="0.4854651" order="0" side_tool="false" content_ui="combo" />
@@ -3090,7 +3095,8 @@
     <MESSAGE value="update 1432" />
     <MESSAGE value="update 2335" />
     <MESSAGE value="update 2357" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 2357" />
+    <MESSAGE value="update 0111" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 0111" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
